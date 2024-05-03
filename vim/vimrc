@@ -1,5 +1,7 @@
 " Start with system default vimrc
-source /usr/share/vim/vimrc
+if filereadable("/usr/share/vim/vimrc")
+  source /usr/share/vim/vimrc
+endif
 
 " Set misc. UI options
 set ruler               " Show line,col numbers in status line.
