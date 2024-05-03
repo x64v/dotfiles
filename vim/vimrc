@@ -1,0 +1,46 @@
+" Start with system default vimrc
+source /usr/share/vim/vimrc
+
+" Set misc. UI options
+set ruler               " Show line,col numbers in status line.
+set showcmd             " Show (partial) command in status line.
+set showmatch           " Show matching brackets.
+set incsearch           " Incremental search
+set number              " Show line numbers
+set cursorline          " Highlight curser row
+set wildmenu            " VIM CLI completion
+set list lcs=tab:\|\ >  " Display tab as pipe (start) to > (end)
+
+" Set smart indent by default
+set autoindent
+set smartindent
+
+" Load filetype-specific syntax, plugins, and indents
+syntax on
+filetype plugin indent on
+
+" Write a file with elevated privileges with bash !!-style syntax
+cmap w!! w !sudo tee > /dev/null %
+
+" Auto match brace with new indented line
+inoremap {<CR> {<CR>}<Esc>ko
+
+" Global replace commands
+nnoremap gr gD:%s/<C-R>///g<left><left>
+nnoremap gcr gD:%s/<C-R>///gc<left><left><left>
+
+
+" -- Plugins --
+
+
+" Gruvbox colorscheme
+set background=dark
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_sign_column = 'bg0'
+autocmd vimenter * ++nested colorscheme gruvbox
+
+" Highlightedyank
+let g:highlightedyank_highlight_duration = 150
+
+" Gitgutter
+set updatetime=100

@@ -1,0 +1,25 @@
+[color]
+	# Enable colors in color-supporting terminals
+	ui = auto
+[core]
+	# Don't consider trailing space change as a cause for merge conflicts
+	whitespace = -trailing-space
+[diff]
+	# Use better, descriptive initials (c, i, w) instead of a/b.
+	mnemonicPrefix = true
+	# Show renames/moves as such
+	renames = true
+[mergetool]
+	# Clean up backup files created by merge tools on tool exit
+	keepBackup = false
+	# Clean up temp files created by merge tools on tool exit
+	keepTemporaries = false
+	# Put the temp files in a dedicated dir anyway
+	writeToTemp = true
+[init]
+	defaultBranch = main
+[advice]
+	addIgnoredFile = false
+	skippedCherryPicks = false
+[pull]
+	rebase = true
