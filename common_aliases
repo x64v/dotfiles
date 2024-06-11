@@ -1,36 +1,36 @@
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias ll='ls -ahl --color=auto'
-alias grep='grep --color=auto'
-
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
 
 # Git
-alias ga="git add"
-alias gaa="git add --all"
-alias gb="git branch"
-alias gc="git commit --verbose"
-alias gc!="git commit --verbose --amend"
-alias gcmsg="git commit --message"
-alias gd="git diff"
-alias gdc="git diff --cached"
-alias gdc="git diff --staged"
+alias ga='git add'
+alias gaa='git add --all'
+alias gb='git branch'
+alias gc='git commit --verbose'
+alias gc!='git commit --verbose --amend'
+alias gcmsg='git commit --message'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gdc='git diff --staged'
 alias gdup='git diff @{upstream}'
 alias glod='git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset"'
 alias glods='git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date=short'
-alias grm="git rm"
-alias gsa="git submodule add"
-alias gsi="git submodule init"
-alias gsu="git submodule update --init --recursive"
-alias gst="git status"
-alias gsta="git stash push"
-alias gstc="git stash clear"
-alias gstd="git stash drop"
-alias gstl="git stash list"
-alias gstp="git stash pop"
-alias gsw="git switch"
+alias grm='git rm'
+alias gsa='git submodule add'
+alias gsi='git submodule init'
+alias gsu='git submodule update --init --recursive'
+alias gst='git status'
+alias gsta='git stash push'
+alias gstc='git stash clear'
+alias gstd='git stash drop'
+alias gstl='git stash list'
+alias gstp='git stash pop'
+alias gsw='git switch'
 
 # Python
-alias pycache-rm="find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete"
+alias pycache-rm='find . -type f -name "*.py[co]" -delete -o -type d -name __pycache__ -delete'
