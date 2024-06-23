@@ -17,8 +17,7 @@ set list lcs=tab:\|\ >  " Display tab as pipe (start) to > (end)
 set autoindent
 set smartindent
 
-" Load filetype-specific syntax, plugins, and indents
-syntax on
+" Load filetype-specific plugins and indents
 filetype plugin indent on
 
 " Write a file with elevated privileges with bash !!-style syntax
@@ -40,6 +39,7 @@ set background=dark
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_sign_column = 'bg0'
 autocmd vimenter * ++nested colorscheme gruvbox
+autocmd vimenter * ++nested syntax on
 
 " Highlightedyank
 let g:highlightedyank_highlight_duration = 150
