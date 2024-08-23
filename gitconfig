@@ -1,3 +1,6 @@
+[advice]
+	addIgnoredFile = false
+	skippedCherryPicks = false
 [color]
 	# Enable colors in color-supporting terminals
 	ui = auto
@@ -9,6 +12,8 @@
 	mnemonicPrefix = true
 	# Show renames/moves as such
 	renames = true
+[init]
+	defaultBranch = main
 [mergetool]
 	# Clean up backup files created by merge tools on tool exit
 	keepBackup = false
@@ -16,11 +21,6 @@
 	keepTemporaries = false
 	# Put the temp files in a dedicated dir anyway
 	writeToTemp = true
-[init]
-	defaultBranch = main
-[advice]
-	addIgnoredFile = false
-	skippedCherryPicks = false
 [pull]
 	rebase = true
 [rerere]
