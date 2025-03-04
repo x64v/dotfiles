@@ -3,7 +3,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-alias grep='grep --color=auto'
+alias grep='grep -E --color=auto'
 alias hexdump='hexdump -C'
 alias ls='ls --color=auto'
 alias ll='ls -ahl --color=auto'
