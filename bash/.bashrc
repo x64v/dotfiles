@@ -98,5 +98,5 @@ if command -v pyenv >/dev/null 2>&1; then
 fi
 
 # Source aliases.
-[[ -f ~/.common_aliases ]] && . ~/.common_aliases
-[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
+[[ -r ~/.common_aliases ]] && source ~/.common_aliases
+[[ -r ~/.bash_aliases ]] && source. ~/.bash_aliases
