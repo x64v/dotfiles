@@ -1,0 +1,35 @@
+{
+	"allowCompoundWords": true,
+	"ignoreWords": [
+		"autocmd",
+		"cgreen",
+		"cindent",
+		"cmap",
+		"creset",
+		"gcmsg",
+		"gdup",
+		"glod",
+		"glods",
+		"gsta",
+		"gstc",
+		"gstd",
+		"gstl",
+		"gstp",
+		"inoremap",
+		"nnoremap",
+		"noexpandtab",
+		"pgdata",
+		"pycache",
+		"pyenv",
+		"rerere",
+		"rxvt",
+		"setaf",
+		"setf",
+		"shellenv",
+		"showcmd",
+		"vimrc"
+	],
+	"words": [
+		"gruvbox"
+	]
+}
