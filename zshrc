@@ -1,6 +1,6 @@
-# Initialize pyenv if exists.
+# Initialize pyenv if installed.
 if command -v pyenv >/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+	eval "$(pyenv init -)"
 fi
 
 # Postgres
@@ -17,5 +17,5 @@ zstyle ':completion:*' expand prefix suffix
 autoload -Uz compinit && compinit
 
 # Source aliases
-[[ -f ~/.common_aliases ]] && . ~/.common_aliases
-[[ -f ~/.zsh_aliases ]] && . ~/.zsh_aliases
+[[ -r ~/.common_aliases ]] && source ~/.common_aliases
+[[ -r ~/.zsh_aliases ]] && source ~/.zsh_aliases

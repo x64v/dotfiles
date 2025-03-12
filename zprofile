@@ -1,2 +1,4 @@
-# Source POSIX profile if exists.
-[[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
+# Source POSIX profile if present.
+if [[ -r ~/.profile ]]; then
+	emulate sh -c "source ~/.profile"
+fi
