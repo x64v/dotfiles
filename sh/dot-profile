@@ -8,6 +8,15 @@ if [ -x /opt/homebrew/bin/brew ]; then
 	eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# Add composer commands to path if installed.
+COMPOSER_PATH="$HOME/.composer/vendor/bin"
+if [ -d "$COMPOSER_PATH" ]; then
+	case ":$PATH:" in
+	*":$COMPOSER_PATH:"*) ;;
+	*) export PATH="$COMPOSER_PATH:$PATH" ;;
+	esac
+fi
+
 # Initialize pnpm if installed and running macOS.
 if [ $(cut -c 1-6 <<<"$OSTYPE") = "darwin" ] && command -v pnpm >/dev/null 2>&1; then
 	export PNPM_HOME="$HOME/Library/pnpm"
