@@ -5,7 +5,7 @@ alias .....='cd ../../../..'
 
 alias grep='grep -E --color=auto'
 alias hexdump='hexdump -C'
-alias ls='ls -hl --color=auto'
+alias ls='ls --color=auto'
 alias ll='ls -ahl --color=auto'
 
 # Git
