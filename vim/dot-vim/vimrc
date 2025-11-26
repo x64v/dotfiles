@@ -20,15 +20,8 @@ set smartindent
 " Load filetype-specific plugins and indents
 filetype plugin indent on
 
-" Write a file with elevated privileges with bash !!-style syntax
-cmap w!! w !sudo tee > /dev/null %
-
 " Auto match brace with new indented line
 inoremap {<CR> {<CR>}<Esc>ko
-
-" Global replace commands
-nnoremap gr gD:%s/<C-R>///g<left><left>
-nnoremap gcr gD:%s/<C-R>///gc<left><left><left>
 
 
 " -- Plugins --
